@@ -1,0 +1,27 @@
+#!/bin/bash
+if [ -z "$PYFILE" ]; then
+	echo "Error: La variable de entorno PYFILE no está establecida."
+	exit 1
+fi
+
+
+if [ ! -f "$PYFILE" ]; then
+	echo "Error: El archivo '$PYFILE' no existe."
+	exit 1
+fi
+
+Nombrebase=$(basename "$PYFILE" .py)
+
+Nombrefinal="${Nombrebase}.pyc"
+python3 -m py_compile "$PYFILE"
+
+if [ -f"${Nombrebase}.cpython-*.pyc" ]; then 
+
+	mv "${Nombrebase}.pyc" "$Nombrefinal"
+	echo "Archivo compilado guardado como '$Nombrefinal'."
+
+else 
+	echo "ERROR: No se pudo encontrar el archivo compilado."
+	exit 1
+
+fi

@@ -1,0 +1,4 @@
+od -t x1 hola.cpython-312.pyc
+
+
+od -t x1 hola.cpython-312.pyc
