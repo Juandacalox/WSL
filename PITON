@@ -1,0 +1,10 @@
+#!/usr/bin/python
+
+c = "Hola Mundo"
+
+e = 23
+
+type (c)
+type (e)
+
+
