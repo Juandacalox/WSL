@@ -1,0 +1,12 @@
+#!/usr/bin/python3
+import random
+
+hola = random.randint(-10, 10)
+
+if hola > 0:
+	print(f"{hola} es positivo")
+elif hola  ==0:
+	print(f"{hola} es cero")
+else:
+	print(f"{hola} es negativo")
+
