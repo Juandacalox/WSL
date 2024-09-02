@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+from lento import  islower
+
+
+print(f'a es {"minúscula" if islower("a") else "mayúscula"}')
+print(f'H es {"minúscula" if islower("H") else "mayúscula"}')
+print(f'A es {"minúscula" if islower("A") else "mayúscula"}')
+print(f'3 es {"minúscula" if islower("3") else "mayúscula"}')
+print(f'g es {"minúscula" if islower("g") else "mayúscula"}')
+
