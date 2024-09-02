@@ -1,0 +1,6 @@
+#!/usr/bin/python3
+fizz = __import__('fizz').fizz
+
+fizz()
+print("")
+
