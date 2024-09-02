@@ -1,0 +1,7 @@
+#!/usr/bin/env python3
+
+from jaja import uppercase
+
+uppercase("best")  # Debe imprimir: BEST
+uppercase("Best School 98 Battery street")  # Debe imprimir: BEST SCHOOL 98 BATTERY STREET
+
